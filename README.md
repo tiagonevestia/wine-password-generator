@@ -59,6 +59,7 @@ Uma lista rápida dos meus próprios planos (não necessariamente em ordem de ex
 
   - [ ] Criar a funcionalidade de gerar a senha.
   - [ ] Criar a funcionalidade de copiar a senha.
+  - [ ] Fazer a refatoração do código.
   - [ ] Definir cores e tipografia.
   - [ ] Colocar o aplicativo na Google Play.
   - [ ] (...)
