@@ -26,6 +26,7 @@
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-how-to-use">Como usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-how-to-contribute">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">To-Do Lists</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-license">Licença</a>
 </p>
 
@@ -51,6 +52,16 @@ Para acessar o layout, use [Figma](https://www.figma.com).
 ## :fire: Como usar
 
 ## :tada: Como contribuir
+
+## :white_check_mark: To-Do Lists
+
+Uma lista rápida dos meus próprios planos (não necessariamente em ordem de execução):
+
+  - [ ] Criar a funcionalidade de gerar a senha.
+  - [ ] Criar a funcionalidade de copiar a senha.
+  - [ ] Definir cores e tipografia.
+  - [ ] Colocar o aplicativo na Google Play.
+  - [ ] (...)
 
 ## :page_facing_up: Licença
 
