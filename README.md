@@ -39,12 +39,21 @@
 
 Este projeto foi desenvolvido com as seguintes tecnologias:
 
-- [Node.js][nodejs]
-- [TypeScript][typescript]
-- [React][reactjs]
-- [React Native][rn]
-- [Expo][expo]
+- [Node.js](https://nodejs.org/en/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React Native](https://reactnative.dev/)
+- [Expo](https://expo.io/)
 
 ## :lipstick: Layout
 
 Para acessar o layout, use [Figma](https://www.figma.com).
+
+## :fire: Como usar
+
+## :tada: Como contribuir
+
+## :page_facing_up: Licença
+
+Este projeto está sob a licença do MIT. Consulte a LICENÇA para obter detalhes.
+
+Feito por Tiago Neves :penguin: Entre em contato!
