@@ -6,7 +6,7 @@ import theme from "./src/constants/theme";
 import Src from "./src";
 
 const themePaper = {
-  ...DefaultTheme
+  ...DefaultTheme,
 };
 
 export default function App() {
