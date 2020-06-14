@@ -57,6 +57,7 @@ Para acessar o layout, use [Figma](https://www.figma.com).
 
 Uma lista rápida dos meus próprios planos (não necessariamente em ordem de execução):
 
+  - [ ] Criar os componentes.
   - [ ] Criar a funcionalidade de gerar a senha.
   - [ ] Criar a funcionalidade de copiar a senha.
   - [ ] Fazer a refatoração do código.
