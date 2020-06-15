@@ -1,4 +1,9 @@
 import React from "react";
+import {
+  Clipboard,
+  TouchableWithoutFeedback,
+  ToastAndroid,
+} from "react-native";
 import { Box, Text } from "react-native-design-utility";
 import theme from "../constants/theme";
 import { Feather } from "@expo/vector-icons";
@@ -27,7 +32,14 @@ const GeneratedPassowrd: React.FC<Props> = ({ password }) => {
           {password}
         </Text>
         <Box position="absolute" bottom={0} right={10}>
-          <Feather name="copy" size={30} color="black" />
+          <TouchableWithoutFeedback
+            onPress={() => {
+              Clipboard.setString(password);
+              ToastAndroid.show("Password copied!", ToastAndroid.SHORT);
+            }}
+          >
+            <Feather name="copy" size={30} color="black" />
+          </TouchableWithoutFeedback>
         </Box>
       </Box>
     </Box>
