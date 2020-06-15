@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React, { memo } from "react";
 import { Slider } from "react-native";
 import { Box, Text } from "react-native-design-utility";
 import theme from "../constants/theme";
 
-const PasswordLength: React.FC = () => {
-  const [valueLength, setValueLength] = useState(4);
+interface Props {
+  valueLength: number;
+  setValueLength: (p: number) => void;
+}
 
+const PasswordLength: React.FC<Props> = ({ valueLength, setValueLength }) => {
   return (
     <Box mx={20} mt={15}>
       <Text size={14} bold>
@@ -33,7 +36,7 @@ const PasswordLength: React.FC = () => {
             minimumTrackTintColor="white"
             thumbTintColor="white"
             step={1}
-            value={4}
+            value={16}
             onValueChange={(value) => setValueLength(value)}
           />
         </Box>
@@ -45,4 +48,4 @@ const PasswordLength: React.FC = () => {
   );
 };
 
-export default PasswordLength;
+export default memo(PasswordLength);

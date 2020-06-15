@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint-disable react-native/split-platform-components */
+import React, { memo } from "react";
 import {
   Clipboard,
   TouchableWithoutFeedback,
@@ -46,4 +47,4 @@ const GeneratedPassowrd: React.FC<Props> = ({ password }) => {
   );
 };
 
-export default GeneratedPassowrd;
+export default memo(GeneratedPassowrd);

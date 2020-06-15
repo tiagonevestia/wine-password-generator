@@ -62,6 +62,8 @@ Uma lista rápida dos meus próprios planos (não necessariamente em ordem de ex
   - [ ] Criar a funcionalidade de copiar a senha.
   - [ ] Fazer a refatoração do código.
   - [ ] Definir cores e tipografia.
+  - [ ] Mostrar a força da senha.
+    - [x] (Password strength checked - zxcvbn) [Password strength checked - zxcvbn](https://github.com/dropbox/zxcvbn)
   - [ ] Colocar o aplicativo na Google Play.
   - [ ] (...)
 

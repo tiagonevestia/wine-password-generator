@@ -1,14 +1,29 @@
-import React, { useState } from "react";
+import React, { memo } from "react";
 import { Box, Text } from "react-native-design-utility";
 import theme from "../constants/theme";
 import { Switch } from "react-native-paper";
 
-const Settings: React.FC = () => {
-  const [isIncludeUppercase, setIsIncludeUppercase] = useState(false);
-  const [isIncludeLowercase, setIsIncludeLowercase] = useState(false);
-  const [isIncludeNumber, setIsIncludeNumber] = useState(false);
-  const [isIncludeSymbols, setIsIncludeSymbols] = useState(false);
+interface Props {
+  isIncludeUppercase: boolean;
+  setIsIncludeUppercase: (p: boolean) => void;
+  isIncludeLowercase: boolean;
+  setIsIncludeLowercase: (p: boolean) => void;
+  isIncludeNumber: boolean;
+  setIsIncludeNumber: (p: boolean) => void;
+  isIncludeSymbols: boolean;
+  setIsIncludeSymbols: (p: boolean) => void;
+}
 
+const Settings: React.FC<Props> = ({
+  isIncludeUppercase,
+  setIsIncludeUppercase,
+  isIncludeLowercase,
+  setIsIncludeLowercase,
+  isIncludeNumber,
+  setIsIncludeNumber,
+  isIncludeSymbols,
+  setIsIncludeSymbols,
+}) => {
   return (
     <Box mx={20} mt={15}>
       <Text size={14} bold uppercase>
@@ -86,4 +101,4 @@ const Settings: React.FC = () => {
   );
 };
 
-export default Settings;
+export default memo(Settings);

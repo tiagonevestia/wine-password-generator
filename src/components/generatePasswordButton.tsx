@@ -2,7 +2,15 @@ import React from "react";
 import { Button } from "react-native-paper";
 import theme from "../constants/theme";
 
-const GeneratePasswordButton: React.FC = () => {
+interface Props {
+  loading: boolean;
+  generatePassword: () => void;
+}
+
+const GeneratePasswordButton: React.FC<Props> = ({
+  loading,
+  generatePassword,
+}) => {
   return (
     <Button
       style={{
@@ -11,9 +19,9 @@ const GeneratePasswordButton: React.FC = () => {
       }}
       labelStyle={{ fontSize: 16 }}
       mode="contained"
-      loading
+      loading={loading}
       color={theme.color.black}
-      onPress={() => {}}
+      onPress={generatePassword}
     >
       Generate password
     </Button>
