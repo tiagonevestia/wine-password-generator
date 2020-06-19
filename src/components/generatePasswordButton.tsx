@@ -15,10 +15,12 @@ const GeneratePasswordButton: React.FC<Props> = ({
     <Button
       style={{
         height: 50,
+        margin: 20,
         justifyContent: "center",
       }}
       labelStyle={{ fontSize: 16 }}
       mode="contained"
+      disabled={loading}
       loading={loading}
       color={theme.color.black}
       onPress={generatePassword}

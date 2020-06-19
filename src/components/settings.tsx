@@ -12,6 +12,7 @@ interface Props {
   setIsIncludeNumber: (p: boolean) => void;
   isIncludeSymbols: boolean;
   setIsIncludeSymbols: (p: boolean) => void;
+  settingsValidation: boolean;
 }
 
 const Settings: React.FC<Props> = ({
@@ -23,12 +24,20 @@ const Settings: React.FC<Props> = ({
   setIsIncludeNumber,
   isIncludeSymbols,
   setIsIncludeSymbols,
+  settingsValidation,
 }) => {
   return (
     <Box mx={20} mt={15}>
-      <Text size={14} bold uppercase>
-        settings
-      </Text>
+      <Box dir="row" justify="between">
+        <Text size={14} bold uppercase>
+          settings
+        </Text>
+        {settingsValidation && (
+          <Text size={10} bold uppercase color={theme.color.redDarkest}>
+            selection settings
+          </Text>
+        )}
+      </Box>
       <Box
         dir="row"
         justify="between"
@@ -41,6 +50,10 @@ const Settings: React.FC<Props> = ({
       >
         <Text>Include uppercase letters</Text>
         <Switch
+          trackColor={{
+            true: theme.color.grey,
+            false: settingsValidation ? theme.color.redDark : theme.color.grey,
+          }}
           color={theme.color.black}
           value={isIncludeUppercase}
           onValueChange={() => setIsIncludeUppercase(!isIncludeUppercase)}
@@ -58,6 +71,12 @@ const Settings: React.FC<Props> = ({
       >
         <Text>Include lowercase letters</Text>
         <Switch
+          trackColor={{
+            true: theme.color.grey,
+            false: settingsValidation
+              ? theme.color.redDarkest
+              : theme.color.grey,
+          }}
           color={theme.color.black}
           value={isIncludeLowercase}
           onValueChange={() => setIsIncludeLowercase(!isIncludeLowercase)}
@@ -75,6 +94,12 @@ const Settings: React.FC<Props> = ({
       >
         <Text>Include numbers</Text>
         <Switch
+          trackColor={{
+            true: theme.color.grey,
+            false: settingsValidation
+              ? theme.color.redDarkest
+              : theme.color.grey,
+          }}
           color={theme.color.black}
           value={isIncludeNumber}
           onValueChange={() => setIsIncludeNumber(!isIncludeNumber)}
@@ -92,6 +117,12 @@ const Settings: React.FC<Props> = ({
       >
         <Text>Include symbols</Text>
         <Switch
+          trackColor={{
+            true: theme.color.grey,
+            false: settingsValidation
+              ? theme.color.redDarkest
+              : theme.color.grey,
+          }}
           color={theme.color.black}
           value={isIncludeSymbols}
           onValueChange={() => setIsIncludeSymbols(!isIncludeSymbols)}

@@ -1,6 +1,5 @@
 import React from "react";
-import { Platform, SafeAreaView, StatusBar } from "react-native";
-import { Box } from "react-native-design-utility";
+import { Platform, SafeAreaView, StatusBar, ScrollView } from "react-native";
 
 const Screen: React.FC = ({ children }) => {
   return (
@@ -11,7 +10,7 @@ const Screen: React.FC = ({ children }) => {
         paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
       }}
     >
-      <Box f={1}>{children}</Box>
+      <ScrollView>{children}</ScrollView>
     </SafeAreaView>
   );
 };

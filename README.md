@@ -33,7 +33,7 @@
 ## :bulb: O Projeto :iphone:
 
 <h1 align="center">
-    <img alt="Example" title="Example" src=".github/capa_projeto.png" width="500px" />
+    <img alt="Example" title="Example" src=".github/app.gif" width="300px" />
 </h1>
 
 ## :wrench: Technologies
@@ -57,12 +57,13 @@ Para acessar o layout, use [Figma](https://www.figma.com).
 
 Uma lista rápida dos meus próprios planos (não necessariamente em ordem de execução):
 
-  - [ ] Criar os componentes.
-  - [ ] Criar a funcionalidade de gerar a senha.
-  - [ ] Criar a funcionalidade de copiar a senha.
+  - [x] Criar os componentes.
+  - [x] Criar a funcionalidade de gerar a senha.
+  - [x] Criar a funcionalidade de copiar a senha.
+  - [ ] Criar animações.
   - [ ] Fazer a refatoração do código.
   - [ ] Definir cores e tipografia.
-  - [ ] Mostrar a força da senha.
+  - [x] Mostrar a força da senha.
     - [x] (Password strength checked - zxcvbn) [Password strength checked - zxcvbn](https://github.com/dropbox/zxcvbn)
   - [ ] Colocar o aplicativo na Google Play.
   - [ ] (...)
